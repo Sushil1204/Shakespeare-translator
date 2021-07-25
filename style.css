@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin');
+* {
+    --primary-color: #2d004d;;
+    --primary-lack: #000000;
+    --secondary-white: #ffffff;
+  }
+
+h1 {
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+body {  
+  font-family: 'Libre Baskerville', serif;
+  color: var(--primary-color);
+  background-image: url(/bgImg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2em;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+.translator {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.17em solid var(--secondary-white);
+  padding: 1.9em;
+  margin-top: 1.3em;
+  width: 40vw;
+  min-width: 17em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 0.63em;
+  margin-bottom: 0.32em;
+}
+
+
+textarea {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.94rem;
+  background-color: var(--secondary-white);
+  color: var(--primary-lack);
+  border: 0.17em solid #2d004d;
+  width: 33vw;
+  min-width: 16.5em;
+  margin: 0.5em 0;
+  padding: 1em;
+}
+
+::placeholder {
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+button {
+  background-color: var(--primary-lack);
+  color: var(--secondary-white);
+  font-size: 0.94rem;
+  padding: 0.63em 0.94em;
+  border: none;
+  margin: auto;
+  width: 8.75em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+button:active {
+  background-color: var(--primary-lack);
+}
